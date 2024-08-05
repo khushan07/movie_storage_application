@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h2>All Movies</h2>
+<div style="background-image: url('your-homepage-bg-url-here'); background-size: cover; padding: 20px;">
+    <ul>
+        {% for movie in movies %}
+        <li style="display: flex; align-items: center;">
+            <img src="{{ movie.image_url }}" alt="{{ movie.title }}" style="width: 2cm; height: 2cm; margin-right: 10px;"> 
+            <div>
+                <a href="{{ url_for('movie_detail', movie_id=movie.id) }}">
+                    <strong>{{ movie.title }}</strong>
+                </a> ({{ movie.year }}) - Directed by {{ movie.director }}<br> 
+                <em>Watch here:</em>
+                <ul>        
+                    {% for url in movie.watch_urls %}
+                    <li><a href="{{ url }}" target="_blank">{{ url }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('add_movie') }}">Add a New Movie</a>
+</div>
+{% endblock %}

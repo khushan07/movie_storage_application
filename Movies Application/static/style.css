@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Default text color */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffd700; /* Change color on hover */
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for Movie Listing */
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Styles for Add Movie Form */
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Color Variations */
+.header-blue {
+    background-color: #007bff; /* Blue header */
+}
+
+.header-green {
+    background-color: #28a745; /* Green header */
+}
+
+.header-red {
+    background-color: #dc3545; /* Red header */
+}
+
+.header-pink {
+    background-color: #e83e8c; /* Pink header */
+    color: white;
+}
+
+/* Additional Styling */
+h2 {
+    color: #007bff; /* Blue heading */
+}
+
+button {
+    background-color: #28a745; /* Green button */
+    color: white;
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
